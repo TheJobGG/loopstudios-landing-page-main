@@ -1,0 +1,87 @@
+@import 'style-guide.css';
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer.padding-horizontal {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+footer>div>.footer-menu {
+    font-family: var(--alata);
+    display: flex;
+    column-gap: 10px;
+    font-size: 13px;
+}
+
+footer>div>.footer-menu>span{
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: 250ms border-bottom ease-in;
+    border-radius: 2px;
+}
+
+footer>div>.footer-menu>span:hover{
+    border-bottom: 2px solid var(--white);
+}
+
+.social-icons{
+    display: flex;
+    justify-content: end;
+    column-gap: 20px;
+}
+
+.social-icons>div{
+    cursor:pointer;
+    margin-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: 250ms border-bottom ease-in;
+}
+
+.social-icons>div:hover{
+    border-bottom: 2px solid var(--white);
+}
+
+footer > div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+footer > div:nth-child(2) > p{
+    color: var(--dark-gray);
+    font-family: var(--alata);
+    font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 50px;
+    }
+
+    footer>div>.footer-menu {       
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        font-size: var(--font-s);
+    }
+
+    .social-icons{
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+    }
+
+    footer > div:nth-child(2) > p{
+        text-align: center;
+    }
+}
