@@ -79,7 +79,7 @@
 .grid>div>.overlay-img {
     cursor: pointer;
     position: absolute;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
     bottom: 3px;
     left: 0;
     width: 100%;
@@ -89,7 +89,7 @@
 }
 
 .grid>div:hover>.overlay-img{
-    background: linear-gradient(#ffffff75, #ffffff50);
+    background-image: linear-gradient(#ffffff75, #ffffff50);
     height: 100%;
 }
 

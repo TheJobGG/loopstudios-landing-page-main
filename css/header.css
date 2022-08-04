@@ -36,15 +36,21 @@ header {
     justify-content: space-between;
 }
 
-.header-menu>span {
+.header-logo>svg{
+    z-index: 1;
+}
+
+.header-menu>a {
+    text-decoration: none;
     cursor: pointer;
     padding: 10px 10px 5px 10px;
     border-bottom: 2px solid transparent;
     transition: 250ms border-bottom ease-in;
     border-radius: 2px;
+    color: var(--white);
 }
 
-.header-menu>span:hover {
+.header-menu>a:hover {
     border-bottom: 2px solid var(--white);
 }
 
@@ -84,7 +90,6 @@ header {
 
     .header-menu-mobile {
         display: block;
-        cursor: pointer;
     }
 
     .header-phrase {

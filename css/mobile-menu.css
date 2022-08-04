@@ -1,0 +1,58 @@
+@import 'style-guide.css';
+
+
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    z-index: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    display: none;
+}
+
+.mobile-menu>a {
+    text-decoration: none;
+    margin-left:  20px;
+    padding: 5px 5px 5px 0;
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: var(--josefin);
+    font-size: 1.5em;
+    cursor: pointer;
+    width: fit-content;
+    border-bottom: 2px solid transparent;
+    transition: 250ms ease-in;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.mobile-menu>a:hover {
+    border-bottom: 2px solid var(--white);
+}
+
+.mobile-menu>a:active {
+    background-color: transparent;
+}
+
+.icons>svg {
+    z-index: 1;
+}
+
+.icons>svg:nth-child(1).deactivated,
+.icons>svg:nth-child(2).deactivated {
+    display: none;
+}
+
+.icons>svg:nth-child(1),
+.icons>svg:nth-child(2) {
+    z-index: 1;
+    position: relative;
+}
