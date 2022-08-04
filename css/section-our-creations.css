@@ -133,18 +133,14 @@
     
     .top-section>h2 {
         font-size: 2em;
-        position: relative;
-        left: 50%;
-        translate: -50%;
-        margin-top: 50px;
+        display: block;
+        margin: 0 auto;
 
     }
 
     .our-creations>.button-mobile {
         display: block;
-        position: relative;
-        left: 50%;
-        translate: -50%;
+        margin: 0 auto;
         margin-top: 50px;
     }
 
